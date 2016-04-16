@@ -121,6 +121,7 @@ LIBZCASH_H = \
 .PHONY: FORCE cargo-build check-symbols check-security
 # bitcoin core #
 BITCOIN_CORE_H = \
+  addrdb.h \
   addressindex.h \
   addrman.h \
   alert.h \
@@ -258,6 +259,7 @@ libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
   sendalert.cpp \
   addrman.cpp \
+  addrdb.cpp \
   alert.cpp \
   alertkeys.h \
   asyncrpcoperation.cpp \
