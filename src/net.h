@@ -745,6 +745,4 @@ public:
     bool Read(banmap_t& banSet);
 };
 
-void DumpBanlist();
-
 #endif // BITCOIN_NET_H
