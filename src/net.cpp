@@ -1888,6 +1888,8 @@ void StartNode(boost::thread_group& threadGroup, CScheduler& scheduler)
         DumpBanlist();
     }
 
+    uiInterface.InitMessage(_("Starting network threads..."));
+
     fAddressesInitialized = true;
 
     if (semOutbound == NULL) {
